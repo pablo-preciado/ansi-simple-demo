@@ -1,0 +1,17 @@
+---
+- hosts: target1
+  gather_facts: no
+  become: true
+
+  tasks:
+
+    - name: Read secret file
+      include_vars: "my-secret-information.yml"
+
+    - name: Display superhero
+      debug:
+        msg: "{{ secret.superhero }}"
+
+    - name: Display real name of superhero
+      debug:
+        msg: "{{ secret.name }}"
