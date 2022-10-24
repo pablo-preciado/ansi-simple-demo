@@ -86,7 +86,7 @@
        validate_certs: no
        organization: "{{ customer_name }} Organization"
        scm_type: git
-       scm_url: {{ gh_url }}
+       scm_url: "{{ gh_url }}"
        credential: Github credential
        scm_update_on_launch: True
        scm_clean: yes
