@@ -8,4 +8,3 @@
      ansible.builtin.file:
        path: /tmp/my-simple-demo-file.txt
        state: touch
-

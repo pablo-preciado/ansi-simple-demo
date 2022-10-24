@@ -107,23 +107,6 @@
        variables:
          ansible_host: "{{ target_host_ip }}"
 
-
-#   - name: 'Add an inventory source'
-#     ansible.controller.inventory_source:
-#       name: "Github inventory source"
-#       controller_host: "{{ mydemocontr }}"
-#       controller_username: "{{ myusrcontr }}"
-#       controller_password: "{{ mypsscontr }}"
-#       validate_certs: no
-#       inventory: "My simple demo inventory"
-#       organization: "{{ customer_name }} Organization"
-#       source: scm
-#       source_path: inventory/hosts
-#       source_project: "My simple demo project"
-#       overwrite: True
-#       overwrite_vars: yes
-#       update_on_launch: True
-
    - name: 'Launch a my simple demo project update'
      ansible.controller.project_update:
        controller_host: "{{ mydemocontr }}"
