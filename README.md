@@ -14,6 +14,9 @@ myghusr: "your-github-user"
 myghtke: "your-github-token"
 mytargetusr: "your-managed-server-username"
 mytargetpss: "your-password-for-target-server"
+customer_name: "test"
+gh_url: "your-gh-repo-url"
+target_host_ip: "your target host ip"
 ```
 Use the following command:
 ```
