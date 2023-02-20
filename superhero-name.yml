@@ -10,8 +10,5 @@
 
     - name: Display superhero
       debug:
-        msg: "{{ secret.superhero }}"
+        msg: "The real identity of {{ secret.superhero }} is {{ secret.name }}"
 
-    - name: Display real name of superhero
-      debug:
-        msg: "{{ secret.name }}"
